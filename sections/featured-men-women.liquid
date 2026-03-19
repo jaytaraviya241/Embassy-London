@@ -1,0 +1,205 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<section class="section-{{ section.id }} featured-men-women">
+  <div class="page-width">
+    <div class="featured-men-women__tabs">
+      <h2
+        type="button"
+        class="tab-btn tab-btn--active"
+        data-target="women"
+      >
+        Women
+      </h2>
+      <h2
+        type="button"
+        class="tab-btn"
+        data-target="men"
+      >
+        Men
+      </h2>
+    </div>
+
+    <div class="featured-men-women__grids">
+      {%- if section.settings.women_collection != blank -%}
+        <div class="tab-grid tab-grid--women tab-grid--active">
+          <div class="grid grid--2-col-tablet grid--4-col-desktop">
+            {%- for product in section.settings.women_collection.products limit: section.settings.products_limit -%}
+              <div class="grid__item">
+                {%- render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: 'adapt',
+                  show_secondary_image: true,
+                  show_vendor: false,
+                  show_rating: false,
+                  show_quick_add: section.settings.enable_quick_add
+                -%}
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <div class="featured-men-women__view-all">
+            <a href="{{ section.settings.women_collection.url }}" class="button"> ALL WOMENS NEW ARRIVALS </a>
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.men_collection != blank -%}
+        <div class="tab-grid tab-grid--men">
+          <div class="grid grid--2-col-tablet grid--4-col-desktop">
+            {%- for product in section.settings.men_collection.products limit: section.settings.products_limit -%}
+              <div class="grid__item">
+                {%- render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: 'adapt',
+                  show_secondary_image: true,
+                  show_vendor: false,
+                  show_rating: false,
+                  show_quick_add: section.settings.enable_quick_add
+                -%}
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <div class="featured-men-women__view-all">
+            <a href="{{ section.settings.men_collection.url }}" class="button"> ALL MENS NEW ARRIVALS </a>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const section = document.querySelector('.section-{{ section.id }}');
+    if (!section) return;
+
+    const buttons = section.querySelectorAll('.tab-btn');
+    const grids = section.querySelectorAll('.tab-grid');
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+
+        buttons.forEach((b) => b.classList.remove('tab-btn--active'));
+        btn.classList.add('tab-btn--active');
+
+        grids.forEach((grid) => {
+          grid.classList.remove('tab-grid--active');
+        });
+
+        const activeGrid = section.querySelector('.tab-grid--' + target);
+        if (activeGrid) {
+          activeGrid.classList.add('tab-grid--active');
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Featured Men & Women",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "women_collection",
+      "label": "Women collection"
+    },
+    {
+      "type": "collection",
+      "id": "men_collection",
+      "label": "Men collection"
+    },
+    {
+      "type": "range",
+      "id": "products_limit",
+      "label": "Number of products",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "label": "Enable quick add",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Men & Women"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  .section-{{ section.id }} .featured-men-women__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  /* H2-style tabs */
+  .section-{{ section.id }} .tab-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;          /* bigger font size */
+    font-weight: 500;           /* bold */
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #666;
+    padding: 0;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  /* Underline effect */
+  .section-{{ section.id }} .tab-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.2s ease;
+  }
+
+  .section-{{ section.id }} .tab-btn:hover {
+    color: #000;
+  }
+
+  .section-{{ section.id }} .tab-btn:hover::after {
+    width: 100%;
+  }
+
+  .section-{{ section.id }} .tab-btn--active {
+    color: #000;
+  }
+
+  .section-{{ section.id }} .tab-btn--active::after {
+    width: 100%;
+  }
+  .section-{{ section.id }} .tab-grid {
+    display: none;
+  }
+
+  .section-{{ section.id }} .tab-grid--active {
+    display: block;
+  }
+
+  .section-{{ section.id }} .featured-men-women__view-all {
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+{% endstyle %}

@@ -1,0 +1,391 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_4QHLfg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WzrUfA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/The_Winter_Collection.webp",
+            "imagemobile": "shopify://shop_images/mobile2.webp",
+            "image_overlay_opacity": 0,
+            "heading": "The Winter Collections",
+            "heading_size": "h2",
+            "subheading": "Women's Shoes",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/mens-leather-footwear",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_6qqmrR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Women_s_Ankle_Shoes.webp",
+            "imagemobile": "shopify://shop_images/mobile3_c3e7e5e3-6e7e-452a-8960-890e40805ce3.webp",
+            "image_overlay_opacity": 20,
+            "heading": "The Winter Collections",
+            "heading_size": "h0",
+            "subheading": "Women's Ankle Boots",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/womens-leather-shoes",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_EcyxaL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Autumn_Collection.webp",
+            "imagemobile": "shopify://shop_images/mobile1.webp",
+            "image_overlay_opacity": 20,
+            "heading": "Autumn Winter 2025",
+            "heading_size": "h2",
+            "subheading": "Men's Boots",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/mens-leather-boots",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_WzrUfA",
+        "slide_6qqmrR",
+        "slide_EcyxaL"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_kK7tf3": {
+      "type": "rich-text",
+      "blocks": {
+        "text_DV6Wxg": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>New Arrivals</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "text_DV6Wxg"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "featured_men_women_KMQfbn": {
+      "type": "featured-men-women",
+      "name": "Featured Men & Women",
+      "settings": {
+        "women_collection": "womens-all",
+        "men_collection": "mens-all",
+        "products_limit": 4,
+        "enable_quick_add": true
+      }
+    },
+    "two_image_buttons_rM4DXp": {
+      "type": "two-image-buttons",
+      "blocks": {
+        "column_ygJBme": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/THE_GIFT_GUIDE.webp",
+            "button_label": "THE GIFT GUIDE",
+            "button_link": "shopify://collections/gift-cards"
+          }
+        },
+        "column_bnhjfY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PARTYWEAR.webp",
+            "button_label": "PARTYWEAR",
+            "button_link": "shopify://collections/partywear"
+          }
+        }
+      },
+      "block_order": [
+        "column_ygJBme",
+        "column_bnhjfY"
+      ],
+      "name": "Two images with buttons",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "four_image_buttons_WAYcPN": {
+      "type": "four-image-buttons",
+      "blocks": {
+        "column_cCnzz4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Womens_shoes.webp",
+            "button_label": "WOMEN'S SHOES",
+            "button_link": "shopify://collections/womens-leather-shoes"
+          }
+        },
+        "column_CPFe39": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mens_boots.webp",
+            "button_label": "MEN'S BOOTS",
+            "button_link": "shopify://collections/mens-leather-boots"
+          }
+        },
+        "column_4RMmND": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Womens_accessories.webp",
+            "button_label": "WOMEN'S ACCESSORIES",
+            "button_link": "shopify://collections/womens-accessories"
+          }
+        },
+        "column_LEtwN4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mens_accessoris.webp",
+            "button_label": "MEN'S ACCESSORIES",
+            "button_link": "shopify://collections/mens-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "column_cCnzz4",
+        "column_CPFe39",
+        "column_4RMmND",
+        "column_LEtwN4"
+      ],
+      "name": "Four image buttons",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "slideshow_qeA7HJ": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WDhXCy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Festive_footwear.webp",
+            "imagemobile": "shopify://shop_images/Festive_footwear.webp",
+            "image_overlay_opacity": 0,
+            "heading": "FESTIVE FOOTWEAR",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-3"
+          }
+        }
+      },
+      "block_order": [
+        "slide_WDhXCy"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_bV6Hbp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QePca6": {
+          "type": "heading",
+          "settings": {
+            "heading": "ANKLE BOOTS",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QePca6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "featured_men_women_cK9Dhn": {
+      "type": "featured-men-women",
+      "name": "Featured Men & Women",
+      "settings": {
+        "women_collection": "womens-ankle-boots",
+        "men_collection": "mens-leather-boots",
+        "products_limit": 4,
+        "enable_quick_add": true
+      }
+    },
+    "ecom_testimonials_section_fPrQFz": {
+      "type": "ecom-testimonials-section",
+      "name": "testimonials",
+      "settings": {}
+    },
+    "image_banner_kA63tp": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_RCLTNm": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>STEP INTO OUR STORES</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_gitWNe": {
+          "type": "text",
+          "settings": {
+            "text": "Visit any of our UK stores located in Greenwich, Camden, Brighton & Canterbury, to explore our vibrant collection of lovingly crafted footwear & accessories.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_yUkcyy": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "STORE LOCATOR",
+            "button_link_1": "shopify://pages/stores",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RCLTNm",
+        "text_gitWNe",
+        "buttons_yUkcyy"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Step_into_store.webp",
+        "image_2": "shopify://shop_images/Step_into_store.webp",
+        "image_overlay_opacity": 50,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_LqX3aB": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter_tjYPgy": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_peHzh8": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEWSLETTER",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_LnDKKy": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Enjoy 10% off your first order and exclusive access to new collections when you sign up for our newsletter.</p>"
+          }
+        },
+        "email_form_39Bk7r": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_peHzh8",
+        "paragraph_LnDKKy",
+        "email_form_39Bk7r"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Newsletter.webp",
+        "mobile_image": "shopify://shop_images/Newsletter_mobile.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "slideshow_4QHLfg",
+    "rich_text_kK7tf3",
+    "featured_men_women_KMQfbn",
+    "two_image_buttons_rM4DXp",
+    "four_image_buttons_WAYcPN",
+    "slideshow_qeA7HJ",
+    "rich_text_bV6Hbp",
+    "featured_men_women_cK9Dhn",
+    "ecom_testimonials_section_fPrQFz",
+    "image_banner_kA63tp",
+    "rich_text_LqX3aB",
+    "newsletter_tjYPgy"
+  ]
+}

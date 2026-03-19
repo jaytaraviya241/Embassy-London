@@ -1,0 +1,80 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multirow_Bc9UVe": {
+      "type": "multirow",
+      "blocks": {
+        "row_qnNYBn": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "GREENWICH",
+            "text": "<p>2A Greenwich Market<br/>London<br/><a href=\"https://www.google.com/maps/place/Embassy+London/@51.4814418,-0.0097832,19z/data=!3m2!4b1!5s0x48760285046b5565:0xed26f32a48a70ba3!4m5!3m4!1s0x4876028504bf2429:0x7d26f2782f70d409!8m2!3d51.481441!4d-0.009236\">SE10 9HZ</a></p><p><strong>Monday:</strong> 11:00-17:30<br/><strong>Tuesday: </strong>11:00-17:30<br/><strong>Wednesday:</strong> 11:00-17:30<br/><strong>Thursday: </strong>11:00-17:30<br/><strong>Friday: </strong>10:30-17:30<br/><br/><strong>Saturday: </strong>10:30-18:00<br/><strong>Sunday:</strong> 10:30-18:00</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_aeBzwP": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_6KtHNc": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_qnNYBn",
+        "row_aeBzwP",
+        "row_6KtHNc"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multirow_Bc9UVe"
+  ]
+}
